@@ -1,22 +1,15 @@
 let argButtonName
 
-// buttonScissors, buttonRock, buttonPaper;
-
 const buttonRock = document.getElementById('button-rock');
 const buttonPaper = document.getElementById('button-paper');
 const buttonScissors = document.getElementById('button-scissors');
 
-
-
 buttonRock.addEventListener("click", function(){
   buttonClicked('kamień'); });
-
 buttonPaper.addEventListener("click", function(){
   buttonClicked('papier'); });
-
 buttonScissors.addEventListener("click", function(){
   buttonClicked('nożyce'); });
-
 
 
 function buttonClicked(argButtonName) {
@@ -37,7 +30,6 @@ function buttonClicked(argButtonName) {
     }
   }
   
-
   playerMove = argButtonName;
   
   // playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
@@ -50,10 +42,6 @@ function buttonClicked(argButtonName) {
   console.log('ruch komputera to: ' + computerMove);
   displayResult(playerMove, computerMove);
 
-
-  /**
-   * Describe this function...
-   */
   function displayResult(argPlayerMove, argComputerMove) {
     console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
     if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
@@ -69,17 +57,4 @@ function buttonClicked(argButtonName) {
     }
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
   }
-  
-  
-  
- 
-
 }
-
-
-
-//   element.addEventListener("click", myFunction);
-
-// function myFunction() {
-//  document.getElementById("demo").innerHTML = "Hello World";
-// }
