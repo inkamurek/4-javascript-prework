@@ -1,9 +1,9 @@
 let argButtonName
 
-// buttonScissors, buttonRock, buttonPapper;
+// buttonScissors, buttonRock, buttonPaper;
 
 const buttonRock = document.getElementById('button-rock');
-const buttonPapper = document.getElementById('button-papper');
+const buttonPaper = document.getElementById('button-paper');
 const buttonScissors = document.getElementById('button-scissors');
 
 
@@ -11,7 +11,7 @@ const buttonScissors = document.getElementById('button-scissors');
 buttonRock.addEventListener("click", function(){
   buttonClicked('kamień'); });
 
-buttonPapper.addEventListener("click", function(){
+buttonPaper.addEventListener("click", function(){
   buttonClicked('papier'); });
 
 buttonScissors.addEventListener("click", function(){
